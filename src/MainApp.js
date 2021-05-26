@@ -1,11 +1,11 @@
 import React from 'react';
 import './style.css';
-import PropsExample from './propsexamples/PropsExample';
+import PropsExample from './props/PropsExample';
 
 function MainApp() {
   return (
     <div>
-      <PropsExample.js />
+      <PropsExample />
     </div>
   );
 }
