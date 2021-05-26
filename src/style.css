@@ -1,14 +1,6 @@
-h1,
-p {
-  font-family: 'Franklin Gothic';
-  /* border: 1px; 
-   border-style: solid; */
-  width: fit-content;
+.tabby10px {
+  margin-left: 10px;
 }
-.employeeNameCls {
-  /*border: 1px;
-  border-style: solid;*/
-  width: fit-content;
-  height: fit-content;
-  margin-bottom: -20px;
+.fontsizesmall {
+  font-size: small;
 }
