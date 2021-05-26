@@ -4,3 +4,6 @@
 .fontsizesmall {
   font-size: small;
 }
+.border {
+  border: solid 1px;
+}
