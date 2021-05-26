@@ -2,6 +2,10 @@ import React from 'react';
 import Message from './Message';
 
 function PropsExample() {
+  /**
+   * Props get passed to the components.
+   * Props are immutable
+   */
   return (
     <div>
       <Message name="Arghya" job="Software Engineer">
