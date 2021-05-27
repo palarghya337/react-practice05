@@ -5,5 +5,20 @@
   font-size: small;
 }
 .border {
-  border: solid 1px;
+  border: groove 1px;
+  width: fit-content;
+}
+.reactIndex {
+  margin-bottom: 2px;
+}
+.mouseHover {
+  padding: 150x;
+  transition: transform 0.3s;
+  font-family: monospace;
+  margin-left: 20px;
+}
+
+.mouseHover:hover {
+  font-size: 14px;
+  width: 25%;
 }

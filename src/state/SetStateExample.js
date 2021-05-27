@@ -15,7 +15,7 @@ class SetStateExample extends Component {
         <div>
           <button onClick={() => this.incrementCount()}>Click</button>
           <button onClick={() => this.resetCount()}>Reset Count</button>
-          <button onClick={() => this.incrementByFive()}>Increment 5x</button>
+          <button onClick={() => this.incrementByFive()}>Increment 5+</button>
         </div>
         <div>{this.message}</div>
       </div>
