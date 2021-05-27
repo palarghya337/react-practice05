@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './style.css';
 import PropsExample from './props/PropsExample';
 import StateExample from './state/StateExample';
+import ReactDOM from 'react-dom';
 
 class HomePage extends Component {
   render() {
@@ -22,18 +23,19 @@ class HomePage extends Component {
               State Example
             </Link>
           </div>
-          <Switch>
-            <Route path="/propsExample">
-              <div className="border">
+          <div className="reactIndex mouseHover">
+            <Link to="/eventHandling">Event Handling</Link>
+          </div>
+          <div id="examples">
+            <Switch>
+              <Route path="/propsExample">
                 <PropsExample />
-              </div>
-            </Route>
-            <Route path="/stateExample">
-              <div className="border">
+              </Route>
+              <Route path="/stateExample">
                 <StateExample />
-              </div>
-            </Route>
-          </Switch>
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </div>
     );

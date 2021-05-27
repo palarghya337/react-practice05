@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './style.css';
-import ReactDOM from 'react-dom';
 import HomePage from './HomePage';
 
 class MainApp extends Component {
@@ -12,7 +11,7 @@ class MainApp extends Component {
     return (
       <div>
         <Router>
-          <Link to="/" level="Home" target={'_blank'}>
+          <Link to="/" level="Home">
             Home
           </Link>
           <Switch>
