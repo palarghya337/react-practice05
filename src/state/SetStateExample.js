@@ -6,7 +6,6 @@ class SetStateExample extends Component {
     this.state = {
       count: 0
     };
-    this.message = '';
   }
 
   render() {
@@ -42,21 +41,24 @@ class SetStateExample extends Component {
   }
   incrementCount() {
     /**
-     * We can not directly update the value of a state
-     * uncomment the below line and check.
+     * We can not directly update the value of a state.
+     * The only place where you can assign this.state is the constructor.
+     * Comment out lin 48 to 52 and uncomment line 53 to 57
      */
     this.state.count = this.state.count + 1;
-    this.setMessage('We can not directly update the value of a state.');
-    /*
-    this.setState({ count: this.state.count + 1 }, () =>
-      console.log('Callback value ', this.state.count)
+    alert(
+      'We can not directly update the value of a state.\n' +
+        'Please go to source code and check what to do next.'
     );
-    */
-    /*
-    this.setState(previousState => ({
-      count: previousState.count + 1
-    }));
-    */
+
+    // this.setState({ count: this.state.count + 1 }, () =>
+    //   console.log('Callback value ', this.state.count)
+    // );
+
+    // this.setState(previousState => ({
+    //   count: previousState.count + 1
+    // }));
+
     /**
      * When you see the console log you will find the value of count
      * is 1 less than the value showing in the UI. The reason is
@@ -70,8 +72,13 @@ class SetStateExample extends Component {
      */
     console.log('Inside incrementCount() method: ' + this.state.count);
   }
-  setMessage(props) {
-    this.message = props;
+
+  componentDidMount() {
+    this.message = this.message;
+    console.log('did', this.message);
+  }
+  componentWillUnmount() {
+    this.message = this.message;
   }
 }
 export default SetStateExample;
