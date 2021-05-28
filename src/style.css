@@ -17,12 +17,13 @@
   transition: transform 0.3s;
   font-size: 13px;
   font-family: monospace;
+  color: white;
   margin-left: 10px;
 }
 .mouseHover:hover {
   font-size: 14px;
+  color: white;
 }
-
 td {
   border: solid 1px;
   width: 500px;
