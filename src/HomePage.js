@@ -9,34 +9,41 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <h3>Welcome to React practice tutorial</h3>
-        <div>Please click the below Links to enter.</div>
-
-        <Router>
-          <div className="reactIndex mouseHover">
-            <Link to="/propsExample" level="PropsExample">
-              Props Example
-            </Link>
-          </div>
-          <div className="reactIndex mouseHover">
-            <Link to="/stateExample" level="StateExample">
-              State Example
-            </Link>
-          </div>
-          <div className="reactIndex mouseHover">
-            <Link to="/eventHandling">Event Handling</Link>
-          </div>
-          <div id="examples">
-            <Switch>
-              <Route path="/propsExample">
-                <PropsExample />
-              </Route>
-              <Route path="/stateExample">
-                <StateExample />
-              </Route>
-            </Switch>
-          </div>
-        </Router>
+        <table>
+          <tr>
+            <td className="reactIndex">
+              <Router>
+                <div className="reactIndex mouseHover">
+                  <Link to="/propsExample" level="PropsExample">
+                    Props Example
+                  </Link>
+                </div>
+                <div className="reactIndex mouseHover">
+                  <Link to="/stateExample" level="StateExample">
+                    State Example
+                  </Link>
+                </div>
+                <div className="reactIndex mouseHover">
+                  <Link to="/eventHandling">Event Handling</Link>
+                </div>
+              </Router>
+            </td>
+            <td className="examples">
+              <h3>Welcome to React practice tutorial</h3>
+              <div>Please click the below Links to enter.</div>
+              <Router>
+                <Switch>
+                  <Route path="/propsExample">
+                    <PropsExample />
+                  </Route>
+                  <Route path="/stateExample">
+                    <StateExample />
+                  </Route>
+                </Switch>
+              </Router>
+            </td>
+          </tr>
+        </table>
       </div>
     );
   }
