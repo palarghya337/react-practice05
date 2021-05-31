@@ -21,7 +21,11 @@ class ShowTime extends Component {
   }
 
   render() {
-    return <div>{this.state.date.toLocaleTimeString()}</div>;
+    return (
+      <div>
+        <h3>{this.state.date.toLocaleTimeString()}</h3>
+      </div>
+    );
   }
 }
 export default ShowTime;

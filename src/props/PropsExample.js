@@ -8,12 +8,26 @@ function PropsExample() {
    */
   return (
     <div>
-      <Message name="Arghya" job="Software Engineer">
-        He lives in Manindranagar.
+      <b>
+        <u>
+          First <i>Message</i> tag-
+        </u>
+      </b>
+      <Message
+        propValue1="First Property Value"
+        propValue2="Second Property Value"
+      >
+        Child Property value
       </Message>
-      <Message name="Kunal" job="Electrical Engineer">
-        He live in Nimtala
-      </Message>
+      <b>
+        <u>
+          Second <i>Message</i> tag-
+        </u>
+      </b>
+      <Message
+        propValue1="1st Property Value"
+        propValue2="2nd Property Value"
+      />
     </div>
   );
 }

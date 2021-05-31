@@ -5,10 +5,15 @@ function Message(props) {
   /**
    * We are doing destructuring in below mentioned way.
    */
-  const { name, job } = props;
+  const { propValue1, propValue2 } = props;
   return (
     <div>
-      {name} is a {job}
+      <div>
+        <b>propValue1:</b> {propValue1}.
+      </div>
+      <div>
+        <b>propValue2:</b> {propValue2}.
+      </div>
       <div class="tabby10px fontsizesmall">{props.children}</div>
     </div>
   );

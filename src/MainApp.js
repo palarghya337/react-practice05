@@ -3,38 +3,66 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import './style.css';
 import PropsExample from './props/PropsExample';
 import StateExample from './state/StateExample';
+import EventHandlingExamples from './eventhandling/EventHandlingExamples';
 
 function MainApp() {
+  function hideHomeMessage() {
+    var message = document.getElementById('welcomeMessage');
+    message.style.display = 'none';
+  }
+
+  function showHomeMessage() {
+    var message = document.getElementById('welcomeMessage');
+    message.style.display = 'block';
+  }
+
   return (
     <div>
       <Router>
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={showHomeMessage}>
+          Home
+        </Link>
         <table>
           <tr>
             <td className="reactIndex">
               <div className="reactIndex mouseHover">
-                <Link to="/propsExample" level="PropsExample">
+                <Link
+                  to="/propsExample"
+                  level="PropsExample"
+                  onClick={hideHomeMessage}
+                >
                   Props Example
                 </Link>
               </div>
               <div className="reactIndex mouseHover">
-                <Link to="/stateExample" level="StateExample">
+                <Link
+                  to="/stateExample"
+                  level="StateExample"
+                  onClick={hideHomeMessage}
+                >
                   State Example
                 </Link>
               </div>
               <div className="reactIndex mouseHover">
-                <Link to="/eventHandling">Event Handling</Link>
+                <Link to="/eventHandlingExamples" onClick={hideHomeMessage}>
+                  Event Handling
+                </Link>
               </div>
             </td>
             <td className="examples">
-              <h3>Welcome to React practice tutorial</h3>
-              Please click the links to see the examples.
+              <div id="welcomeMessage">
+                <h3>Welcome to React practice tutorial</h3>
+                Please click the links to see the examples.
+              </div>
               <Switch>
                 <Route path="/propsExample">
                   <PropsExample />
                 </Route>
                 <Route path="/stateExample">
                   <StateExample />
+                </Route>
+                <Route path="/eventHandlingExamples">
+                  <EventHandlingExamples />
                 </Route>
               </Switch>
             </td>
@@ -44,4 +72,5 @@ function MainApp() {
     </div>
   );
 }
+
 export default MainApp;
