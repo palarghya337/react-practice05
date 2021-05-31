@@ -29,6 +29,11 @@ td {
   width: 500px;
   height: 500px;
 }
+.margin-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .squareBox {
   width: 50px;
   height: 50px;

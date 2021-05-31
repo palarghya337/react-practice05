@@ -49,10 +49,10 @@ function MainApp() {
                 </Link>
               </div>
             </td>
-            <td className="examples">
+            <td className="margin-center">
               <div id="welcomeMessage">
                 <h3>Welcome to React practice tutorial</h3>
-                Please click the links to see the examples.
+                Please click on the links to see the examples.
               </div>
               <Switch>
                 <Route path="/propsExample">

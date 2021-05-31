@@ -3,6 +3,7 @@ import OnClickEventExample from './functionalcomponentexamples/OnClickEventExamp
 import OnChangeEventExample from './functionalcomponentexamples/OnChangeEventExample';
 import OnKeyDownEventExample from './functionalcomponentexamples/OnKeyDownEventExample';
 import BindEventHandlerExample from './BindEventHandlerExample';
+import Parent from './Parent';
 
 function EventHandlingExamples() {
   return (
@@ -23,6 +24,12 @@ function EventHandlingExamples() {
         <b>Binding Event Handler Example</b>
       </div>
       <BindEventHandlerExample />
+      <p>
+        <div>
+          <b>Parent child communication Example</b>
+        </div>
+        <Parent />
+      </p>
     </div>
   );
 }
