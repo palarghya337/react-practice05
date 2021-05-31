@@ -28,7 +28,7 @@ export default function OnChangeEventExample() {
       />
       <div>
         Text Count:
-        <b id="label" />
+        <i id="label" />
       </div>
     </div>
   );
