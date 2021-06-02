@@ -4,8 +4,12 @@ import ListExamples from './ListExamples';
 function CollectionsExample() {
   return (
     <div>
-      <div><b>List Example</b></div>
-      <ListExamples />
+      <p>
+        <div>
+          <b>List Example</b>
+        </div>
+        <ListExamples />
+      </p>
     </div>
   );
 }

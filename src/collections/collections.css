@@ -1,0 +1,9 @@
+table {
+  border: solid 1px;
+}
+tr {
+  border-bottom: solid 1px;
+}
+td {
+  width: 150px;
+}

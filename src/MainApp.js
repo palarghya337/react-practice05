@@ -20,12 +20,14 @@ function MainApp() {
   return (
     <div>
       <Router>
-        <Link to="/" onClick={showHomeMessage}>
-          Home
-        </Link>
         <table>
           <tr>
             <td className="reactIndex">
+              <div className="reactIndex mouseHover">
+                <Link to="/" onClick={showHomeMessage}>
+                  Home
+                </Link>
+              </div>
               <div className="reactIndex mouseHover">
                 <Link
                   to="/propsExample"
@@ -55,7 +57,7 @@ function MainApp() {
                 </Link>
               </div>
             </td>
-            <td className="margin-center">
+            <td className="margin-center mainTable">
               <div id="welcomeMessage">
                 <h3>Welcome to React practice tutorial</h3>
                 Please click on the links to see the examples.
