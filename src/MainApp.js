@@ -4,6 +4,7 @@ import './style.css';
 import PropsExample from './props/PropsExample';
 import StateExample from './state/StateExample';
 import EventHandlingExamples from './eventhandling/EventHandlingExamples';
+import CollectionsExample from './collections/CollectionsExample';
 
 function MainApp() {
   function hideHomeMessage() {
@@ -48,6 +49,11 @@ function MainApp() {
                   Event Handling
                 </Link>
               </div>
+              <div className="reactIndex mouseHover">
+                <Link to="/collections" onClick={hideHomeMessage}>
+                  Collections
+                </Link>
+              </div>
             </td>
             <td className="margin-center">
               <div id="welcomeMessage">
@@ -63,6 +69,9 @@ function MainApp() {
                 </Route>
                 <Route path="/eventHandlingExamples">
                   <EventHandlingExamples />
+                </Route>
+                <Route path="/collections">
+                  <CollectionsExample />
                 </Route>
               </Switch>
             </td>
