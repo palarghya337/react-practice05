@@ -11,11 +11,19 @@ function ListExamples() {
   const data = listOfValues.map(value => <div>{value}</div>);
   console.log(arrayOfUsers);
 
-  const userData = arrayOfUsers.map(user => <User user={user} />);
+  /**
+   * Key propety is reserved and is used to render list efficiently. It helps to identify
+   * which item in the list has changed or added or removed and plays a crutial role to
+   * handle UI updates
+   *
+   * Wath below video to understand it in a better way.
+   * https://youtu.be/0sasRxl35_8
+   */
+  const userData = arrayOfUsers.map(user => <User key={user.id} user={user} />);
 
   return (
     <div>
-      <div>{data}</div> 
+      <div>{data}</div>
       <table>
         <tr>
           <th>Name</th>
