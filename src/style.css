@@ -1,6 +1,9 @@
 .tabby10px {
   margin-left: 10px;
 }
+.add_space_below {
+  margin-bottom: 10px;
+}
 .fontsizesmall {
   font-size: small;
 }

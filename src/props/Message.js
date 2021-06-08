@@ -14,7 +14,7 @@ function Message(props) {
       <div>
         <b>propValue2:</b> {propValue2}.
       </div>
-      <div class="tabby10px fontsizesmall">{props.children}</div>
+      <div className="tabby10px fontsizesmall">{props.children}</div>
     </div>
   );
 }
