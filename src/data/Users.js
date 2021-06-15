@@ -1,4 +1,4 @@
-const arrayOfUsers = [
+var arrayOfUsers = [
   {
     id: 1001,
     type: 'Employee',
